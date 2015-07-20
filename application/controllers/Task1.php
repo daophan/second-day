@@ -7,6 +7,8 @@ class Task1 extends CI_Controller {
 	{
 		// Get email value from post
 		$email = $this->input->post('email');
+		
+		$email_valid = null;
 
 		// Validate email
 		if(isset($email))
@@ -15,6 +17,6 @@ class Task1 extends CI_Controller {
 		}
 
 		$this->load->helper('form');
-		$this->load->view('task1');
+		$this->load->view('task1', array('email_valid' => $email_valid));
 	}
 }
