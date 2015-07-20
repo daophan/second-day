@@ -20,3 +20,8 @@ class Task1 extends CI_Controller {
 		$this->load->view('task1', array('email_valid' => $email_valid));
 	}
 }
+
+/*
+	Refs:
+	- http://stackoverflow.com/questions/2049502/what-characters-are-allowed-in-email-address
+*/
